@@ -25,9 +25,9 @@ while True:
         print "Connection from %s on %s" % client_address
         # Receive the data in small chuncks and send it back
         while True:
-            data = connection.recv(16)
-            print "Received data: '%s'" % data
+            data = connection.recv(4096)
             if data:
+                print "Received data: '%s'" % data
                 print "Sending data back to client..."
                 connection.sendall(data)
             else:
