@@ -1,0 +1,8 @@
+
+Learning sockets and network communications in python
+
+- Using python sockets for TCP echo server
+  -TCP_echo_client.py
+  -TCP_echo_server.py
+
+Next up Checksums!
